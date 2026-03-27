@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bob-Cakes Admin Sign In</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="images/bob-cakes-logo.jpg" alt="Bob-Cakes logo" class="brand-logo">
+      <div class="brand-copy">
+        <h1>Bob-Cakes</h1>
+        <p>Portfolio admin sign in</p>
+      </div>
+    </a>
+    <nav class="main-nav simple-nav"><a href="index.html">Back to site</a></nav>
+  </div>
+</header>
+<main>
+  <section class="section admin-shell">
+    <div class="container narrow-wrap">
+      <div class="admin-panel">
+        <div class="section-head left">
+          <h2>Sign in to manage portfolio uploads</h2>
+          <p>Only signed-in users can open the portfolio admin page.</p>
+        </div>
+        <form id="admin-login-form" class="admin-form">
+          <label>Username
+            <input type="text" name="username" placeholder="Enter username" required>
+          </label>
+          <label>Password
+            <input type="password" name="password" placeholder="Enter password" required>
+          </label>
+          <button class="button button-primary" type="submit">Sign in</button>
+          <p id="login-note" class="admin-note">Default username: <strong>jamie</strong> · Default password: <strong>bobcakes2026!</strong></p>
+          <p class="admin-note">Change those inside <strong>js/admin.js</strong> after you test it.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><div class="container site-footer-inner"><p>Bob-Cakes admin access</p><a href="https://jasonswebpages.com" target="_blank" rel="noopener noreferrer" class="footer-credit-logo" aria-label="Site designed by Jason's Webpages"><img src="images/jasonswebpages-logo.png" alt="Jason's Webpages"></a></div></footer>
+<script src="js/site.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>

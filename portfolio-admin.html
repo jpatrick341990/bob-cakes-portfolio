@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bob-Cakes Portfolio Admin</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body id="portfolio-admin-page">
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <img src="images/bob-cakes-logo.jpg" alt="Bob-Cakes logo" class="brand-logo">
+      <div class="brand-copy">
+        <h1>Bob-Cakes</h1>
+        <p>Portfolio admin</p>
+      </div>
+    </a>
+    <nav class="main-nav simple-nav">
+      <a href="index.html">View site</a>
+      <button class="button button-secondary small-button" id="admin-signout" type="button">Sign out</button>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="section admin-shell">
+    <div class="container admin-layout">
+      <div class="admin-panel">
+        <div class="section-head left">
+          <h2>Add a new portfolio item</h2>
+          <p>Add the cake photo, choose the category, and the site will create a new card automatically.</p>
+        </div>
+        <form id="portfolio-form" class="admin-form">
+          <label>Item title
+            <input type="text" name="title" placeholder="Example: Floral birthday cake" required>
+          </label>
+          <label>Category
+            <select name="category" required>
+              <option value="">Choose one</option>
+              <option value="cakes">Cakes</option>
+              <option value="cupcakes">Cupcakes</option>
+              <option value="treats">Treats</option>
+              <option value="seasonal">Seasonal</option>
+            </select>
+          </label>
+          <label>Short description
+            <textarea name="description" rows="4" placeholder="Example: Buttercream floral design with custom color palette." required></textarea>
+          </label>
+          <label>Upload image from computer
+            <input id="portfolio-image" type="file" accept="image/*">
+          </label>
+          <label>Or use an image path already in the site
+            <input type="text" name="imagePath" placeholder="images/example-cake.jpg">
+          </label>
+          <div id="image-preview" class="image-preview">Image preview</div>
+          <button class="button button-primary" type="submit">Add portfolio item</button>
+        </form>
+      </div>
+      <div class="admin-panel">
+        <div class="section-head left">
+          <h2>Current custom uploads</h2>
+          <p>Delete anything here that you no longer want shown on the site.</p>
+        </div>
+        <div id="admin-items" class="admin-items"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer"><div class="container site-footer-inner"><p>Bob-Cakes portfolio admin</p><a href="https://jasonswebpages.com" target="_blank" rel="noopener noreferrer" class="footer-credit-logo" aria-label="Site designed by Jason's Webpages"><img src="images/jasonswebpages-logo.png" alt="Jason's Webpages"></a></div></footer>
+<script src="js/site.js"></script>
+<script src="js/admin.js"></script>
+</body>
+</html>
