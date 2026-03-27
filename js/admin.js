@@ -3,7 +3,7 @@
   const LOGIN_KEY = 'bobCakesAdminSession';
   const STORAGE_KEY = 'bobCakesPortfolioItems';
   const ADMIN_USER = 'jamie';
-  const ADMIN_PASS = 'bobcakes2026!';
+  const ADMIN_PASS = 'bobcakes2026';
 
   function getItems() {
     try {
